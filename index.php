@@ -21,7 +21,7 @@ if ($database === null) {
     die("Failed to decode JSON.");
 }
 
-if (!isset($database->result->records)) {
+if ($database->result->records === [])) {
     die("No records of {$userSearch} found.");
 }
 
